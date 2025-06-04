@@ -1,11 +1,8 @@
 # OpenCV 라이브러리를 불러옵니다.
 import cv2
 
-# 얼굴 검출을 위한 Haar Cascade 분류기를 불러옵니다.
-face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
-
 # 웹캠을 엽니다. (0은 기본 웹캠을 의미합니다)
-cap = cv2.VideoCapture(1)
+cap = cv2.VideoCapture(0)
 
 # 웹캠이 열리지 않았을 경우 에러 메시지를 출력합니다.
 if not cap.isOpened():
